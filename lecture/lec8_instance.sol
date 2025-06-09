@@ -29,3 +29,4 @@ contract B{
         instance_a.change(_name, _age);
     }
 }
+
