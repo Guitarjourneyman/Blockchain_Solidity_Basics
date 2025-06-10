@@ -1,4 +1,4 @@
-## Smart Contract: The rule how to operate cryptocurrency 
+## Smart Contract: The Rule How to Operate Cryptocurrency 
 e.g. Give money every a multiple of three
 
 # Introduction
