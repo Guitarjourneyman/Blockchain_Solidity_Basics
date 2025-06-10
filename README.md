@@ -14,7 +14,11 @@ How to define contract?
 - contract Helllo{}
 
 How to make an instance of a contact => same as java,C#
-A variable doesn't depend on its instance's changes  constructor: intinitalizes variables when generalize an instance  However, due to limited gas, we can't use the function infinitely.  GAS (dependent on how long smart contract)  1 ether = 10^18 wei = 10^9 Gwei   whenever to deploy smart contract, gas is used. The thing is how to deal with as less as possible
+A variable doesn't depend on its instance's changes  
+constructor: intinitalizes variables when generalize an instance  
+However, due to limited gas, we can't use the function infinitely.  
+GAS (dependent on how long smart contract)  1 ether = 10^18 wei = 10^9 Gwei   
+whenever to deploy smart contract, gas is used. The thing is how to deal with as less as possible
 
 # Function
 fuction NAME(PARAMETER) public { //CONTEXT}
