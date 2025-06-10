@@ -3,10 +3,12 @@ e.g. Give money every a multiple of three
 
 # Introduction
 * No Print function in solidity - Use log instead
-Comment below
+
+MUST Comment below
 * solidity license - // SPDX-License-Identifier: GPL - 30
 * solidity version - e.g pragma solidity >= 0.7.0 < 0.9.0;
-** Must end up with semicolone
+
+Must end up with semicolone
 
 How to define contract?
 - contract Helllo{}
