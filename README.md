@@ -54,7 +54,7 @@ e.g. contract 상속 수신자 is 상속 송신자: The contract handed over can
 Bring up the original function by super. It's convinient since it isn't necessary to call all context from the parent's
 * What is event ? instead of print due to no existance of print phrase in solidity  
 emit 컨트랙트명(필요한 파라미터) -> We can record values into the block.
-* Indexed - The term in event  [Link Text](lecture/lec14_indexed.sol)
+* Indexed - The term in event  [EXAMPLE CODE OF 'indexed'](lecture/lec14_indexed.sol)
 When you get values from event index, you can't get the values which you want directly in Blockchain. Using 'indexed' makes filtered returned outcome which you want.  
 
 Linear Search
