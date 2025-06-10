@@ -1,28 +1,58 @@
-REMIX DEFAULT WORKSPACE
+## Smart Contract: The rule how to operate cryptocurrency 
+e.g. Give money every a multiple of three
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+# Introduction
+* No Print function in solidity - Use log instead
+Comment below
+* solidity license - // SPDX-License-Identifier: GPL - 30
+* solidity version - e.g pragma solidity >= 0.7.0 < 0.9.0;
+** Must end up with semicolone
 
-This workspace contains 3 directories:
+How to define contract?
+- contract Helllo{}
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+How to make an instance of a contact => same as java,C#
+A variable doesn't depend on its instance's changes
+constructor: intinitalizes variables when generalize an instance
+However, due to limited gas, we can't use the function infinitely.
+GAS (dependent on how long smart contract)
+1 ether = 10^18 wei = 10^9 Gwei 
+whenever to deploy smart contract, gas is used. The thing is how to deal with as less as possible
 
-SCRIPTS
+# Function
+fuction NAME(PARAMETER) public { //CONTEXT}
+fuction NAME(PARAMETER) public returns (RETURNED TYPE){ //CONTEXT}
+public: anywhere
+external: contract anywhere except where defined
+private: contract only where defined
+internal: contract where defined and inherited 
+view: it make variables out of a function readable but non editable
+pure: when a function doesn't use variables out of the fucntion.
+Nothing(not defined view nor pure): when a function uses variables out of the function but has to change its value
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+e.g. function setAgeList(uint256 index, uint256 age) public{ageList[_index] = age;}
+e.g. function getAge(uint256 index, uint256 age) public {return ageList[_index];}
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+# Data Management
+Storage: most of variables, function permanently saved here. more data need more gas
+Memory: parameters, return value, type of reference saved here temporarily. Less gas used than a storage
+Colldata: used to parameters of external function
+stack: manages stack data by EVM limited 1024MB
+* String type should be defined followed by 'memory'
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+# Data Strcuture
+Mapping: key-value
+mapping(uint256=>uint256) private ageList;
+매핑(키=>벨류) 가시성 이름;
+ 
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+# Inheritence
+e.g. contract 상속 수신자 is 상속 송신자: The contract handed over can use the parents' functions without redefinition.
+
+# Overriding
+'virtual' from the original function
+'override' from the overrode function
+when a cotranct wants to get inheritant by more than two,
+e.g. contract Son is Father,Mother{}
+However, they have common function, child contract must override # fuction getMoney() public view override(부모1,부모2 또는 부모1){}
