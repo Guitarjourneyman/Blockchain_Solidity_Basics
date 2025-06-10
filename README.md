@@ -50,10 +50,22 @@ mapping(uint256=>uint256) private ageList;
 
 # Inheritence
 e.g. contract 상속 수신자 is 상속 송신자: The contract handed over can use the parents' functions without redefinition.  
+* super
+Bring up the original function by super. It's convinient since it isn't necessary to call all context from the parent's
+* What is event ? instead of print due to no existance of print phrase in solidity  
+emit 컨트랙트명(필요한 파라미터) -> We can record values into the block.
+* Indexed - The term in event  [Link Text](lecture/lec14_indexed.sol)
+When you get values from event index, you can't get the values which you want directly in Blockchain. Using 'indexed' makes filtered returned outcome which you want.  
+
+Linear Search
+It's impossible to compare anything directly unlike the other languuages
+So, Converting to hash is mendatory using e.g. keccak256
 
 # Overriding
 'virtual' from the original function  
 'override' from the overrode function  
 when a cotranct wants to get inheritant by more than two.  
 e.g. contract Son is Father,Mother{}  
-However, they have common function, child contract must override # fuction getMoney() public view override(부모1,부모2 또는 부모1){}  
+However, they have common function, child contract must override e.g. function getMoney() public view override(부모1,부모2 또는 부모1){}  
+
+
