@@ -3,8 +3,11 @@ e.g. Give money every a multiple of three
 
 ## Introduction
 * No Print function in solidity - Use log instead
-
-MUST Comment below
+## License Identifier
+Obejective
+1. Boost trust in smart contract  
+2. Resolve copy right issues  
+*MUST Comment below*    
 * solidity license - // SPDX-License-Identifier: GPL - 30
 * solidity version - e.g pragma solidity >= 0.7.0 < 0.9.0;
 
