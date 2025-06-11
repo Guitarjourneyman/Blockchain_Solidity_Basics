@@ -31,6 +31,8 @@ view: it make variables out of a function readable but non editable
 pure: when a function doesn't use variables out of the fucntion.  
 Nothing(not defined view nor pure): when a function uses variables out of the function but has to change its value  
 
+** Better to define return parameter for better visibility
+
 e.g. function setAgeList(uint256 index, uint256 age) public{ageList[_index] = age;}  
 e.g. function getAge(uint256 index, uint256 age) public {return ageList[_index];}  
 
@@ -45,7 +47,12 @@ stack: manages stack data by EVM limited 1024MB
 # Data Strcuture
 Mapping: key-value  
 mapping(uint256=>uint256) private ageList;  
-매핑(키=>벨류) 가시성 이름;  
+* 매핑(키=>벨류) 가시성 이름;  
+
+# Array
+[Basic commands](lecture/lec18_array.sol)
+Mapping can't return length In the other hand, Array can return its lenth.
+Mapping is generally recommended. The main advantage of an array is for iteration however it may occur issues such as gas overconsumption
  
 
 # Inheritence
@@ -67,5 +74,19 @@ So, Converting to hash is mendatory using e.g. keccak256
 when a cotranct wants to get inheritant by more than two.  
 e.g. contract Son is Father,Mother{}  
 However, they have common function, child contract must override e.g. function getMoney() public view override(부모1,부모2 또는 부모1){}  
+
+# Error handler (0.4.22 ~ 0.7.x)
+[Basic commands & Examples](lecture/lec25_errorHandler.sol)
+assert: After gas is ran out, if it doesn't require specific condition(if it returns false), it results in an error after consuming gas. Generally used in TEST
+* assert(조건)
+revert: It results in an error without any condition, refunding gas
+* revert(에러 메시지);
+require: if it returns false, it results in an error with refunding gas.
+* require(조건, 에러메시지)
+
+# Error handler (0.8.1 ~)
+revert: if it returns false, it results in an error with refunding gas. If internal errors occur, it results in 'panic'
+
+
 
 
