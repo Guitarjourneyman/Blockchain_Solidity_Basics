@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numChangeFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lecture/lec30_modifier.sol": "lec30"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lecture/lec30_modifier.sol": {
+			"keccak256": "0x8eb90cf16e2ead0e6a587e2e98cedbffe1a405422d5c54aa314f6a53e82aa486",
+			"license": "GPL - 30",
+			"urls": [
+				"bzz-raw://e7f9049b05d306cd4aae4c66ac673fef7d4f5d2c0fdc46539c116d46fbe5bf20",
+				"dweb:/ipfs/QmfDRjW1yAKiXvoJzi65NKi8LzZbDzmrhB655HqhW9L2xD"
+			]
+		}
+	},
+	"version": 1
+}
