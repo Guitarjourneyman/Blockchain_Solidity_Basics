@@ -32,9 +32,10 @@ pure: when a function doesn't use variables out of the fucntion.
 Nothing(not defined view nor pure): when a function uses variables out of the function but has to change its value  
 
 ** Better to define return parameter for better visibility
+** why define 'pure' at the end? Unless using any outter variables, it must define 'pure'  
 
-e.g. function setAgeList(uint256 index, uint256 age) public{ageList[_index] = age;}  
-e.g. function getAge(uint256 index, uint256 age) public {return ageList[_index];}  
+* function setAgeList(uint256 index, uint256 age) public{ageList[_index] = age;}  
+* function getAge(uint256 index, uint256 age) public {return ageList[_index];}  
 
 ## Data Management
 Storage: most of variables, function permanently saved here. more data need more gas  
@@ -89,6 +90,16 @@ require: if it returns false, it results in an error with refunding gas.
 
 ## Error handler (0.8.1 ~)  
 revert: if it returns false, it results in an error with refunding gas. If internal errors occur, it results in 'panic'  
+
+
+
+## Modifier
+when error phrases(revert,require,???) are many, use modifier instead.  
+_; is MUST  
+* modifier onlyAdult{ revert("error")}  
+* function BuyCigarette(uint256 _ age) public onlyAdult return (stirng memory){return "Your payment is succedeed"}  
+[example](lecture/lec30_modifier.sol)  
+What is the key word _; ? to recall a function which defines the modifier  
 
 
 
