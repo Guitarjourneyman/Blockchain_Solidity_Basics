@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "assertNow",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requireNow",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "revertNow",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lecture/lec25_errorHandler.sol": "lec25"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lecture/lec25_errorHandler.sol": {
+			"keccak256": "0xff573859742e3e503e0e310e2cdde9c8c64557ece1038f77d4c91b84b5495e75",
+			"license": "GPL - 30",
+			"urls": [
+				"bzz-raw://b44578e25875c4ef5ae9ddf4ee6892bee138ca367c61317797a66670540e597b",
+				"dweb:/ipfs/QmVhxVK16YyZq2CskcG2RqAxtyWCUviheXJZuaeXkm4Tse"
+			]
+		}
+	},
+	"version": 1
+}

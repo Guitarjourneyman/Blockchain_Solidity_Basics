@@ -1,0 +1,29 @@
+{
+  "name": "lec25",
+  "address": "0x9D7f74d0C41E726EC95884E0e97Fa6129e3b5E99",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "assertNow",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "requireNow",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "revertNow",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "filePath": "default_workspace/lecture/lec25_errorHandler.sol",
+  "pinnedAt": 1749628896018
+}
