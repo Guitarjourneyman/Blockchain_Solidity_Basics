@@ -95,11 +95,11 @@ revert: if it returns false, it results in an error with refunding gas. If inter
 
 ## Modifier
 when error phrases(revert,require,???) are many, use modifier instead.  
-_; is MUST  
+_; is MUST  *What is the key word _; ? to recall a function which defines the modifier*  
 * modifier onlyAdult{ revert("error")}  
 * function BuyCigarette(uint256 _ age) public onlyAdult return (stirng memory){return "Your payment is succedeed"}  
 [example](lecture/lec30_modifier.sol)  
-What is the key word _; ? to recall a function which defines the modifier  
+
 
 
 
