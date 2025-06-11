@@ -7,7 +7,7 @@ e.g. Give money every a multiple of three
 Obejective
 1. Boost trust in smart contract  
 2. Resolve copy right issues  
-*MUST Comment below*    
+MUST Comment license below *(Not necessary under 0.6.0 version)*    
 * solidity license - // SPDX-License-Identifier: GPL - 30
 * solidity version - e.g pragma solidity >= 0.7.0 < 0.9.0;
 
