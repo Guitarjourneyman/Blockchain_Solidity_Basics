@@ -77,10 +77,13 @@ However, they have common function, child contract must override e.g. function g
 
 ## Error handler (0.4.22 ~ 0.7.x)  
 [Basic commands & Examples](lecture/lec25_errorHandler.sol)  
+
 assert: After gas is ran out, if it doesn't require specific condition(if it returns false), it results in an error after consuming gas. Generally used in TEST  
-* assert(조건)  
+* assert(조건)
+  
 revert: It results in an error without any condition, refunding gas  
-* revert(에러 메시지);  
+* revert(에러 메시지);
+  
 require: if it returns false, it results in an error with refunding gas.  
 * require(조건, 에러메시지)  
 
