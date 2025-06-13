@@ -94,14 +94,46 @@ require: if it returns false, it results in an error with refunding gas.
 ## Error handler (0.8.1 ~)  
 revert: if it returns false, it results in an error with refunding gas. If internal errors occur, it results in 'panic'  
 
-
-
 ## Modifier
 when error phrases(revert,require,???) are many, use modifier instead.  
 _; is MUST  *What is the key word _; ? to recall a function which defines the modifier*  
 * modifier onlyAdult{ revert("error")}  
 * function BuyCigarette(uint256 _ age) public onlyAdult return (stirng memory){return "Your payment is succedeed"}  
 [example](lecture/lec30_modifier.sol)  
+
+## Payable
+It is ESSENTIAL when we send ethur by send, transfer and call  
+Able to use to Functions, address, constructor  
+msg.value : the value of transfer ethur  
+주소.balance: The amount left balance of the address  
+msg.sender: The address of The main subject using the smart contract  
+
+The 3 methods sending Ethur [examples](lecture/lec32_payable.sol)  
+send: consumed 2300 gas, return true/false depending on the result  
+transfer: consumed 2300 gas, if failed, it occurs an error  
+call: we can adjust gas which means variable gas set, return true/false depending on the result  
+[Constraint by contructor examples](lecture/lect34_payable2.sol)  
+
+## fallback function
+[fallback&receive](lecture/lect35_fallback.sol)
+## 🚨 **CAUTION**: here are a few different comments depending on version
+
+Prior to Version 0.6  
+fallback is literally role of fallback  
+The features  
+  1. unnamed function
+  2. MUST attach 'external'
+  3. payable 
+why used?  
+  1. To make a smart contract take Ether  
+  2. After taking Ether, it makes a smart contract act somewhat  
+  3. If a function that does not exist is called, it makes a smart contract act somewhat  
+     
+Post to Version 0.6 (0.6 Included)  
+receive: only to receive Ether  
+fallback: when the function executes and send Ether or there is no function existing which is called  
+
+
 
 
 
