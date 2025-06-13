@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.6.1+commit.e6f7d5a4"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "DepositWithSend",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "TestNonExistFunction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lecture/lect35_fallback.sol": "You"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lecture/lect35_fallback.sol": {
+			"keccak256": "0xdb4b06c5cb8a29f272ca373298464b42b43feef7651f50513764170ba50d0d1b",
+			"urls": [
+				"bzz-raw://d06f20557aa8eefa4bf8ccbd71cdfc6b78bf6ceb08ffca707905556003b1d024",
+				"dweb:/ipfs/QmNan8ETKEoD84dsXLz7ZmxdVkWWLuMMJBxFAgA2NQu2AY"
+			]
+		}
+	},
+	"version": 1
+}
