@@ -133,8 +133,11 @@ Post to Version 0.6 (0.6 Included)
 receive: only to receive Ether  
 fallback: when the function executes and send Ether or there is no function existing which is called  
 
-
-
+## Call: low level function
+  1. Transfer
+  2. Call external functions of smart contracts
+  3. various amount of gas
+[Call function examples](lecture/lec36_call.sol)
 
 
 
