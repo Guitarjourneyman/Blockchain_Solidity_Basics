@@ -108,7 +108,7 @@ msg.value : the value of transfer ethur
 주소.balance: The amount left balance of the address  
 msg.sender: The address of The main subject using the smart contract  
 
-The 3 methods sending Ethur[examples](lecture/lec32_payable.sol)  
+The 3 methods sending Ethur [examples](lecture/lec32_payable.sol)  
 send: consumed 2300 gas, return true/false depending on the result  
 transfer: consumed 2300 gas, if failed, it occurs an error  
 call: we can adjust gas which means variable gas set, return true/false depending on the result  
