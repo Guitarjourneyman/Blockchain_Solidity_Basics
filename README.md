@@ -136,7 +136,7 @@ fallback: when the function executes and send Ether or there is no function exis
 ## Call: low level function
   1. Transfer
   2. Call external functions of smart contracts
-  3. various amount of gas
+  3. various amount of gas  
 [Call function examples](lecture/lec36_call.sol)
 
 
