@@ -14,7 +14,7 @@ contract add{
 contract callerWithDelegate{
     uint256 public num =0;
 
-    // Save num in add contract
+    // Save num in "add" contract
     function callNow(address _contractAddr) public {
         (bool success,)= _contractAddr.call(abi.encodeWithSignature("plusOne()"));
         require(success,"failed to invoke");

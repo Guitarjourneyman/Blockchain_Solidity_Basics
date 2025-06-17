@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"lecture/lec37_delecatecall.sol": {
-			"keccak256": "0xb06606ef1c87935c05fb3740297ce34fb7e1c9b1c87ae736ed24bcf60dbe49d9",
+			"keccak256": "0x18f7cf1b988512e8e05635185109ea01c8c40793e7cb3f611ee3d51844c0b014",
 			"license": "GPL - 30",
 			"urls": [
-				"bzz-raw://3f62ba2a39b9db8cc74f25b82401de4eca694ed87fbd0b4849332e2e1994d257",
-				"dweb:/ipfs/QmNxDT25QhR77karoKaXZhqdEJ1zyenYN7Btyu9MUxe2QU"
+				"bzz-raw://0e1973fdae58da28b3cf6eed8b42be1fa5003a0db43308e47ed64b63d1b45834",
+				"dweb:/ipfs/QmSJMU3PDGXg3rR4qJDLz4frJmroAdqbMF61bcimvSFipG"
 			]
 		}
 	},
