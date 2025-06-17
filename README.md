@@ -145,7 +145,7 @@ Delegate Call:
   2. The actual values are saved into caller (it executes an external function outside where an external function is defined)
 [code](lecture/lec37_delecatecall.sol)
 
-![delecatecall](images/screenshot125557.PNG)  
+![delecatecall](images/screenshot125557.png)  
 ![call](images/screenshot130254.png)  
 Example situation:  
 * Note that blockchain mechanism never allow to change deployed smart contracts. In condition we want to change function from already deployed smart contract, we cannot apply new function since data transfer costs a lot and we neet to update the address of all consumers who are recorded into blocks. Therefore, we use delegate call instead of call to allow change functions of smart contracts by set new address of smart contract which we want to update (called ungradable smart contract).
