@@ -6,23 +6,30 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_contractAddr",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					}
 				],
-				"name": "Info",
-				"type": "event"
+				"name": "callNow",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractAddr",
+						"type": "address"
+					}
+				],
+				"name": "delegatecallNow",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -35,13 +42,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "plusOne",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec37_delecatecall.sol": "add"
+			"lecture/lec37_delecatecall.sol": "callerWithDelegate"
 		},
 		"evmVersion": "london",
 		"libraries": {},

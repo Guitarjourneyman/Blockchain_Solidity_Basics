@@ -6,23 +6,30 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_contractAddr",
 						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					}
 				],
-				"name": "Info",
-				"type": "event"
+				"name": "callNow",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractAddr",
+						"type": "address"
+					}
+				],
+				"name": "delecatecallNow",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -35,13 +42,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "plusOne",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec37_delecatecall.sol": "add"
+			"lecture/lec37_delecatecall.sol": "callerWithDelecate"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"lecture/lec37_delecatecall.sol": {
-			"keccak256": "0xb06606ef1c87935c05fb3740297ce34fb7e1c9b1c87ae736ed24bcf60dbe49d9",
+			"keccak256": "0x769b6696e54f8d917b1d0b1d94d8231097aff97d5af2ac2b4440941028d1acbb",
 			"license": "GPL - 30",
 			"urls": [
-				"bzz-raw://3f62ba2a39b9db8cc74f25b82401de4eca694ed87fbd0b4849332e2e1994d257",
-				"dweb:/ipfs/QmNxDT25QhR77karoKaXZhqdEJ1zyenYN7Btyu9MUxe2QU"
+				"bzz-raw://1a8ab50227c7558b90e3f987c75def240805a2b3354a345f946a1a8fb7438310",
+				"dweb:/ipfs/QmexG9Ujv1Rm3rA5MRsFADa76yLYzqVDnMSoQoBhPmsQTK"
 			]
 		}
 	},
